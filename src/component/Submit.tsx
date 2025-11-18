@@ -1,5 +1,5 @@
 import React from "react";
-import "./globals.css";
+// Global CSS is imported in `app/layout.tsx` — don't import it inside components.
 
 type SubmitProps = {
   h1?: string;
@@ -9,25 +9,10 @@ type SubmitProps = {
 const Submit = (props: SubmitProps) => {
   const { h1 = "Masuk", p = "Selamat Datang Kembali" } = props;
   return (
-    <div className="submit">
-      <div className="title">
-        <img src="public/img/logo2.png" alt="logo" />
-        <h1>{h1}</h1>
-        <p>{p}</p>
-      </div>
-
-      <div className="username">
-        <label>Username</label>
-        <div className="box">
-          <input type="text" placeholder="Masukkan username" required />
-        </div>
-      </div>
-      <div className="password">
-        <label>Kata Sandi</label>
-        <div className="box">
-          <input type="password" placeholder="Masukkan kata sandi" required />
-        </div>
-      </div>
+    <div className="text-center py-6">
+      <img className="inline" src="/img/logo2.png" alt="logo" />
+      <h1 className="text-3xl font-bold my-3 md:text-md">{h1}</h1>
+      <p className="text-lg font-normal md:text-sm">{p}</p>
     </div>
   );
 };

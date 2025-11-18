@@ -1,8 +1,6 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -49,7 +47,7 @@ body {
 }
 
 .hero {
-  background-image: url(../img/content.png);
+  background-image: url(/img/content.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +130,6 @@ body {
 
 .hero2 {
   padding: 2.5rem 2.5rem;
-  height: auto;
   background-color: #181a1c;
 }
 
@@ -146,6 +143,15 @@ body {
 .film-row {
   display: flex;
   gap: 10px;
+}
+
+.film-card img {
+  max-width: none;
+}
+
+span {
+  display: flex;
+  align-items: center;
 }
 
 .info {
@@ -278,7 +284,7 @@ body {
     height: auto;
   }
 
-  .logo .chill {
+  .nav-left .chill {
     display: none;
   }
   .logo .movie {
@@ -290,11 +296,11 @@ body {
     padding: 67px 20px 40px 20px;
   }
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .hero-content p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
@@ -362,4 +368,19 @@ body {
   .list2 {
     display: none;
   }
+}
+
+.box {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #e7e3fcad;
+  border-radius: 40px;
+  padding: 7px 10px;
+}
+.box-submit {
+  background-color: #3d4142;
+  width: 100%;
+  border: 2px solid #e7e3fcad;
+  border-radius: 40px;
+  padding: 7px 10px;
 }

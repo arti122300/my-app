@@ -1,0 +1,30 @@
+.bodylog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/bg-login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/bg-register.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin: 80px 50px;
+  background: #181a1cd6;
+  padding: 40px;
+  color: #fff;
+  gap: 10px;
+}
+.klik {
+  font-weight: bold;
+}
